@@ -1,4 +1,4 @@
-# revision 25417
+# revision 27121
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20120224
+Version:	20120810
 Release:	1
 Summary:	Chinese, Japanese, Korean
 Group:		Publishing
@@ -16,6 +16,8 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langcj
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
+Requires:	texlive-collection-basic
+Requires:	texlive-collection-documentation-chinese
 Requires:	texlive-adobemapping
 Requires:	texlive-arphic
 Requires:	texlive-c90
@@ -34,15 +36,17 @@ Requires:	texlive-japanese-otf
 Requires:	texlive-japanese-otf-uptex
 Requires:	texlive-jfontmaps
 Requires:	texlive-jsclasses
+Requires:	texlive-luatexja
 Requires:	texlive-norasi-c90
 Requires:	texlive-ptex
 Requires:	texlive-thailatex
 Requires:	texlive-uhc
+Requires:	texlive-uptex
 Requires:	texlive-wadalab
+Requires:	texlive-xpinyin
 Requires:	texlive-zhmetrics
+Requires:	texlive-zhnumber
 Requires:	texlive-zhspacing
-Requires:	texlive-collection-basic
-Requires:	texlive-collection-documentation-chinese
 
 %description
 CJK (Chinese, Japanese, Korean) macros, fonts, documentation,
