@@ -1,4 +1,4 @@
-# revision 27121
+# revision 27780
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20120810
+Version:	20121030
 Release:	1
 Summary:	Chinese, Japanese, Korean
 Group:		Publishing
@@ -39,6 +39,7 @@ Requires:	texlive-jsclasses
 Requires:	texlive-luatexja
 Requires:	texlive-norasi-c90
 Requires:	texlive-ptex
+Requires:	texlive-pxcjkcat
 Requires:	texlive-thailatex
 Requires:	texlive-uhc
 Requires:	texlive-uptex
