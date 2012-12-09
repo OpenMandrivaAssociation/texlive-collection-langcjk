@@ -1,4 +1,4 @@
-# revision 27780
+# revision 27121
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20121030
+Version:	20120810
 Release:	1
 Summary:	Chinese, Japanese, Korean
 Group:		Publishing
@@ -39,7 +39,6 @@ Requires:	texlive-jsclasses
 Requires:	texlive-luatexja
 Requires:	texlive-norasi-c90
 Requires:	texlive-ptex
-Requires:	texlive-pxcjkcat
 Requires:	texlive-thailatex
 Requires:	texlive-uhc
 Requires:	texlive-uptex
@@ -63,3 +62,16 @@ also Thai since there is some overlap in the fonts.
 %build
 
 %install
+
+
+%changelog
+* Fri Aug 10 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120810-1
++ Revision: 813912
+- Update to latest release.
+
+* Fri Feb 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120224-1
++ Revision: 780333
+- Update to latest release.
+- Import texlive-collection-langcjk
+- Import texlive-collection-langcjk
+
