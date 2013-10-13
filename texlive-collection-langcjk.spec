@@ -1,4 +1,4 @@
-# revision 27121
+# revision 31788
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,9 +6,9 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20120810
+Version:	20131013
 Release:	1
-Summary:	Chinese, Japanese, Korean
+Summary:	Chinese/Japanese/Korean
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
@@ -17,17 +17,22 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires:	texlive-collection-basic
-Requires:	texlive-collection-documentation-chinese
 Requires:	texlive-adobemapping
 Requires:	texlive-arphic
+Requires:	texlive-bxbase
+Requires:	texlive-bxcjkjatype
+Requires:	texlive-bxjscls
 Requires:	texlive-c90
 Requires:	texlive-cjk
+Requires:	texlive-cjk-ko
 Requires:	texlive-cjkpunct
 Requires:	texlive-cjkutils
 Requires:	texlive-cns
+Requires:	texlive-convbkmk
 Requires:	texlive-ctex
+Requires:	texlive-ctex-faq
 Requires:	texlive-dnp
-Requires:	texlive-fonts-tlwg
+Requires:	texlive-fandol
 Requires:	texlive-garuda-c90
 Requires:	texlive-hyphen-chinese
 Requires:	texlive-ipaex
@@ -36,21 +41,37 @@ Requires:	texlive-japanese-otf
 Requires:	texlive-japanese-otf-uptex
 Requires:	texlive-jfontmaps
 Requires:	texlive-jsclasses
+Requires:	texlive-latex-notes-zh-cn
+Requires:	texlive-lshort-chinese
+Requires:	texlive-lshort-japanese
+Requires:	texlive-lshort-korean
 Requires:	texlive-luatexja
+Requires:	texlive-nanumtype1
 Requires:	texlive-norasi-c90
 Requires:	texlive-ptex
-Requires:	texlive-thailatex
+Requires:	texlive-ptex2pdf
+Requires:	texlive-pxbase
+Requires:	texlive-pxchfon
+Requires:	texlive-pxcjkcat
+Requires:	texlive-pxjahyper
+Requires:	texlive-pxrubrica
+Requires:	texlive-texlive-zh-cn
 Requires:	texlive-uhc
 Requires:	texlive-uptex
 Requires:	texlive-wadalab
+Requires:	texlive-xcjk2uni
 Requires:	texlive-xpinyin
 Requires:	texlive-zhmetrics
 Requires:	texlive-zhnumber
 Requires:	texlive-zhspacing
+Requires:	texlive-zxjafbfont
+Requires:	texlive-zxjafont
+Requires:	texlive-zxjatype
 
 %description
-CJK (Chinese, Japanese, Korean) macros, fonts, documentation,
-also Thai since there is some overlap in the fonts.
+CJK (Chinese, Japanese, Korean) macros, fonts, documentation.
+Also Thai in the c90 encoding, since there is some overlap in
+those fonts.  Standard Thai support is in collection-langother.
 
 #-----------------------------------------------------------------------
 %files
@@ -62,16 +83,3 @@ also Thai since there is some overlap in the fonts.
 %build
 
 %install
-
-
-%changelog
-* Fri Aug 10 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120810-1
-+ Revision: 813912
-- Update to latest release.
-
-* Fri Feb 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120224-1
-+ Revision: 780333
-- Update to latest release.
-- Import texlive-collection-langcjk
-- Import texlive-collection-langcjk
-
