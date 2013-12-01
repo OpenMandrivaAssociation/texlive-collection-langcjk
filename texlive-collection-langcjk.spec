@@ -1,4 +1,4 @@
-# revision 31788
+# revision 32105
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20131013
+Version:	20131201
 Release:	1
 Summary:	Chinese/Japanese/Korean
 Group:		Publishing
@@ -41,6 +41,10 @@ Requires:	texlive-japanese-otf
 Requires:	texlive-japanese-otf-uptex
 Requires:	texlive-jfontmaps
 Requires:	texlive-jsclasses
+Requires:	texlive-kotex-oblivoir
+Requires:	texlive-kotex-plain
+Requires:	texlive-kotex-utf
+Requires:	texlive-kotex-utils
 Requires:	texlive-latex-notes-zh-cn
 Requires:	texlive-lshort-chinese
 Requires:	texlive-lshort-japanese
