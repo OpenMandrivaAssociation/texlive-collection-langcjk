@@ -7,7 +7,7 @@
 Name:		texlive-collection-langcjk
 Epoch:		1
 Version:	20131201
-Release:	4
+Release:	5
 Summary:	Chinese/Japanese/Korean
 Group:		Publishing
 URL:		http://tug.org/texlive
