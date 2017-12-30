@@ -6,8 +6,8 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20140621
-Release:	4
+Version:	20170903
+Release:	1
 Summary:	Chinese/Japanese/Korean (base)
 Group:		Publishing
 URL:		http://tug.org/texlive
