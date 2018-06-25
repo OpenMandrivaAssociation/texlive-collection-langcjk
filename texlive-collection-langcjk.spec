@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langcjk
 Epoch:		1
-Version:	20170903
+Version:	20180303
 Release:	1
 Summary:	Chinese/Japanese/Korean (base)
 Group:		Publishing
