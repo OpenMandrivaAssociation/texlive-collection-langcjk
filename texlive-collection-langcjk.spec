@@ -1,41 +1,41 @@
-Name:		texlive-collection-langcjk
-Epoch:		1
-Version:	65824
+%global tl_name collection-langcjk
+%global tl_revision 78607
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
 Summary:	Chinese/Japanese/Korean (base)
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langcjk.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/collection-langcjk
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langcjk.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires:	texlive-collection-basic
-Requires:	texlive-adobemapping
-Requires:	texlive-c90
-Requires:	texlive-cjk
-Requires:	texlive-cjkpunct
-Requires:	texlive-cjkutils
-Requires:	texlive-dnp
-Requires:	texlive-garuda-c90
-Requires:	texlive-norasi-c90
-Requires:	texlive-xcjk2uni
-Requires:	texlive-zxjafont
+%texlive_base_requires
+Requires:	texlive(adobemapping)
+Requires:	texlive(c90)
+Requires:	texlive(cjk)
+Requires:	texlive(cjk-gs-integrate)
+Requires:	texlive(cjkpunct)
+Requires:	texlive(cjkutils)
+Requires:	texlive(collection-basic)
+Requires:	texlive(dnp)
+Requires:	texlive(evangelion-jfm)
+Requires:	texlive(fixjfm)
+Requires:	texlive(garuda-c90)
+Requires:	texlive(jfmutil)
+Requires:	texlive(norasi-c90)
+Requires:	texlive(pxtatescale)
+Requires:	texlive(xcjk2uni)
+Requires:	texlive(zitie)
+Requires:	texlive(zxjafont)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
 Packages supporting a combination of Chinese, Japanese, Korean,
-including macros, fonts, documentation.  Also Thai in the c90
-encoding, since there is some overlap in those fonts; standard
-Thai support is in collection-langother.  Additional packages
-for CJK are in their individual language collections.
+including macros, fonts, documentation. Also Thai in the c90 encoding,
+since there is some overlap in those fonts; standard Thai support is in
+collection-langother. Additional packages for CJK are in their
+individual language collections.
 
-#-----------------------------------------------------------------------
-%files
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
